@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input type="text" name="" id="totalHere" />
+</body>
+<script type="text/javascript">
+	function calculateBill(meal,taxRate = 0.05) {
+		const total = meal * (1 + taxRate);
+
+		return total;
+	}
+
+	const mytotal = calculateBill(100, 0.13);
+
+	const info = document.getElementById("totalHere");
+	info.value = mytotal;
+	alert(mytotal);
+</script>
+</html>
